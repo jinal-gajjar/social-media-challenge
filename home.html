@@ -9,79 +9,95 @@
         <style>
         .card
         {
-            background-color : rgba(206, 202, 202, 0.863)
+            background-color : rgb(240,243,250);
+            border: none;
+            padding: 20px;
         }
-       
+        .form-check-input:checked {
+            background-color:  hsl(230, 22%, 74%)!important;
+            border-color: hsl(230, 22%, 74%)!important;
+        }
+        .social-icon{
+            width: 20px;
+            height: 20px;
+        }
+        .topDiv{
+            background-color:rgb(248,249,254); 
+            height: 260px;
+            z-index: -1;
+        }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="topDiv position-absolute w-100" ></div>
+        <div class="container pt-5">
             <div class="row">
                     
                     <div class="col-8 mt-3 "><h1>Social Media Dashboard</h1></div>
                     <div class="col-4 mt-5">
                         <div class="custom-control custom-switch">
-                            <label class="custom-control-label" for="customSwitch1">Dark Mode</label>
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <div class="form-check-lg form-switch text-md-end text-none ps-0">
+                                <label class="form-check-label pe-md-2 pe-0 " for="flexSwitchCheckDefault">Dark Mode</label>
+                                <input class="form-check-input float-end ms-0" checked="" type="checkbox" id="flexSwitchCheckDefault">
+                                
+                            </div>
                         </div>
                     </div>
+                    <div class =" col-12">
+                        <h6>Total Followers:23,004</h6>
                     </div>
+
             </div>
         </div>   
-        <div class="container">        
-                <div class="row">
-                <div class =" col-12">
-                            <h6>Total Followers:23,004</h6>
-                </div>
-                </div>
-            </div>
-        <div class="container text-center">
+        
+        <div class="container mt-4 text-center">
             <div class="row">
                 <div class="col-3">
-                    <div class="card">
+                    <div class="card border-top border-5 border-primary">
                         <div class="card-body">
-                        <h5 class="card-title">@nathnf</h5>
+                        <img src="./images/icon-facebook.svg" class="img-fluid" alt="..."> @nathanf
                         <h1 class="card-title">1987</h1>
                         <p class="card-text" >FOLLOWERS</p>
+                        <img src="./images/icon-up.svg" class="img-fluid" alt="..."> 12 Today
             
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card">
+                    <div class="card border-top border-5 border-info">
                         <div class="card-body">
-                        <h5 class="card-title">@nathnf</h5>
-                        <h1 class="card-title">1044</h1>
+                            <img src="./images/icon-twitter.svg" class="img-fluid" alt="...">  @nathanf
+                            <h1 class="card-title">1044</h1>
                         <p class="card-text" >FOLLOWERS</p>
-                     
+                        <img src="./images/icon-up.svg" class="img-fluid" alt="..."> 99 Today
+
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card">
+                    <div class="card border-top border-5 border-warning">
                         <div class="card-body">
-                        <h5 class="card-title">@realnathnf</h5>
+                            <img src="./images/icon-instagram.svg" class="img-fluid" alt="...">  @realnathanf
                           <h1 class="card-title">11K</h1>
                           <p class="card-text" >FOLLOWERS</p>
-                         
+                          <img src="./images/icon-up.svg" class="img-fluid" alt="..."> 1099 Today
+
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card">
+                    <div class="card border-top border-5 border-danger">
                         <div class="card-body">
-                          <h5 class="card-title">@Nathan F.</h5>
+                            <img src="./images/icon-youtube.svg" class="img-fluid" alt="...">  @Nathan F.
                           <h1 class="card-title">8239</h1>
                           <p class="card-text" >SUBSCRIBERS</p>
-                         
+                          <img src="./images/icon-down.svg" class="img-fluid downImg" alt="..."> 144 Today
+       
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
 
         <div class="container mt-5 ">        
             <div class="row">
@@ -95,34 +111,65 @@
                 <div class="col-3">
                     <div class="card">
                         <div class="card-body">
-                        <h5 class="card-title">Page Views </h5>
-                        <h2 class="card-title">87</h2>
-                        
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title text-secondary">Page Views </h5>
+                                <img class="social-icon" src="./images/icon-facebook.svg" alt="...">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="card-title">87</h2>
+                                <div class="mt-2">
+                                    <img src="./images/icon-up.svg" alt="..."> <span class="text-success">3%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title text-secondary">Likes </h5>
+                                <img class="social-icon" src="./images/icon-facebook.svg" alt="...">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="card-title">52</h2>
+                                <div class="mt-2">
+                                    <img src="./images/icon-up.svg" alt="..."> <span class="text-danger">2%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Page Views </h5>
-                            <h2 class="card-title">52</h2>
-                     
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title text-secondary">Likes </h5>
+                                <img class="social-icon" src="./images/icon-instagram.svg" alt="...">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="card-title">5462</h2>
+                                <div class="mt-2">
+                                    <img src="./images/icon-up.svg" alt="..."> <span class="text-success">2257%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Likes</h5>
-                            <h2 class="card-title">5462</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Profile Views </h5>
-                            <h2 class="card-title">52k</h2>
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title text-secondary">Profile Views </h5>
+                                <img class="social-icon" src="./images/icon-instagram.svg" alt="...">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="card-title">52k</h2>
+                                <div class="mt-2">
+                                    <img src="./images/icon-up.svg" alt="..."> <span class="text-success">1375%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,40 +178,71 @@
         <div class="container mt-4"> 
             <div class="row">
                 <div class="col-3">
-                    <div class="card ">
+                    <div class="card">
                         <div class="card-body">
-                        <h5 class="card-title">Retweets </h5>
-                        <h2 class="card-title">117</h2>
-                        
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title text-secondary">Retweets </h5>
+                                <img class="social-icon" src="./images/icon-twitter.svg" alt="...">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="card-title">117</h2>
+                                <div class="mt-2">
+                                    <img src="./images/icon-up.svg" alt="..."> <span class="text-success">303%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title text-secondary">Likes </h5>
+                                <img class="social-icon" src="./images/icon-instagram.svg" alt="...">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="card-title">507</h2>
+                                <div class="mt-2">
+                                    <img src="./images/icon-up.svg" alt="..."> <span class="text-success">553%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Likes</h5>
-                            <h2 class="card-title">507</h2>
-                     
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title text-secondary">Likes </h5>
+                                <img class="social-icon" src="./images/icon-youtube.svg" alt="...">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="card-title">107</h2>
+                                <div class="mt-2">
+                                    <img src="./images/icon-up.svg" alt="..."> <span class="text-danger">19%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Likes</h5>
-                            <h2 class="card-title">107</h2>
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title text-secondary">Total Views </h5>
+                                <img class="social-icon" src="./images/icon-instagram.svg" alt="...">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h2 class="card-title">1407</h2>
+                                <div class="mt-2">
+                                    <img src="./images/icon-up.svg" alt="..."> <span class="text-danger">12%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Total Views </h5>
-                            <h2 class="card-title">1407</h2>
-                        </div>
-                    </div>
-                </div>
-                </div>
+            </div>
                 
             </body>
             </html>
